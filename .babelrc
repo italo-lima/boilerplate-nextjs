@@ -1,0 +1,25 @@
+{
+  "plugins": [
+    [
+      "babel-plugin-styled-components",
+      {
+        "ssr": true,
+        "displayname": true
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        [
+          "babel-plugin-styled-components",
+        {
+          "ssr": false,
+          "displayname": false
+        }
+        ]
+      ]
+    }
+  },
+  "presets": ["next/babel", "@babel/preset-typescript"]
+}
